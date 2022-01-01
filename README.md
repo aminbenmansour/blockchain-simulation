@@ -16,3 +16,9 @@ In this repo we will be learning by doing, It forces me to deal with the subject
 ### before we get started
 
 Remember that a blockchain is an *immutable, sequential chain of records* called **Blocks**. They can contain *transactions, files or any data you like*, really. But the important thing is that they’re chained together using *hashes*.
+
+
+### representing a blockchain
+We’ll create a Blockchain class whose constructor creates an initial empty list (to store our blockchain), and another to store transactions
+
+Our Blockchain class is responsible for managing the chain. It will store transactions and have some helper methods for adding new blocks to the chain.
