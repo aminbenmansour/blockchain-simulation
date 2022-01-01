@@ -51,3 +51,9 @@ At this point, the idea of a chain should be apparent—each new block contains 
 ### adding a transaction to a block
 
 After *new_transaction()* adds a transaction to the list, it returns the index of the block which the transaction will be added to ***the next one to be mined***. *This will be useful later on, to the user submitting the transaction*.
+
+### creating new blocks
+
+When our Blockchain is instantiated we’ll need to seed it with a `genesis block`, *a block with no predecessors*. We’ll also need to add a **proof to our genesis block** which is **the result of mining** (or `proof of work`).
+
+In addition to creating the genesis block in our constructor, we’ll also flesh out the methods for `new_block()`, `new_transaction()` and `hash()`.
