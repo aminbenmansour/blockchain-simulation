@@ -63,3 +63,30 @@ At this point, you must be wondering how new blocks are created, forged or mined
 ---
 
 ### Understanding Proof of Work (PoW)
+
+A Proof of Work algorithm (PoW) is how new Blocks are created or mined on the blockchain. The goal of PoW is to discover a number which solves a problem. **The number must be difficult to find but easy to verify**, computationally speaking, by anyone on the network. This is the core idea behind Proof of Work.
+
+We’ll look at a very simple example to help this sink in.
+
+Let’s decide that the hash of some integer x multiplied by another y must end in 0. So, hash(x * y) = ac23dc...0. And for this simplified example, let’s fix x = 5
+
+```
+from hashlib import sha256
+x = 5  
+y = 0  # We don't know what y should be yet...
+
+while sha256(f'{x*y}'.encode()).hexdigest()[-1] != "0":  
+    y += 1
+    
+print(f'The solution is y = {y}')
+```
+
+The solution here is y = 21. Since, the produced hash ends in 0
+
+```hash(5 * 21) = 1253e9373e...5e3600155e860```
+
+In Bitcoin, the Proof of Work algorithm is called [Hashcash](https://en.wikipedia.org/wiki/Hashcash). And it’s not too different from our basic example above. It’s the algorithm that miners race to solve in order to create a new block. In general, the difficulty is determined by the number of characters searched for in a string. The miners are then rewarded for their solution by receiving a coin—in a transaction.
+
+The network is able to easily verify their solution.
+
+
