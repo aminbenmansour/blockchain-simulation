@@ -89,4 +89,17 @@ In Bitcoin, the Proof of Work algorithm is called [Hashcash](https://en.wikipedi
 
 The network is able to easily verify their solution.
 
+### Implementing basic Proof of Work
 
+
+Let’s implement a similar algorithm for our blockchain. Our rule will be similar to the example above:
+*Find a number p that when hashed with the previous block’s solution a hash with 4 leading 0s is produced.*
+
+To adjust the difficulty of the algorithm, we could modify the number of leading zeroes. But 4 is sufficient. You’ll find out that the addition of a single leading zero makes a mammoth difference to the time required to find a solution.
+
+---
+Our class is almost complete and we’re ready to begin interacting with it using HTTP requests.
+---
+
+
+### :fire: Our Blockchain as an API
