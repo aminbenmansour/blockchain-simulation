@@ -57,3 +57,9 @@ After *new_transaction()* adds a transaction to the list, it returns the index o
 When our Blockchain is instantiated we’ll need to seed it with a `genesis block`, *a block with no predecessors*. We’ll also need to add a **proof to our genesis block** which is **the result of mining** (or `proof of work`).
 
 In addition to creating the genesis block in our constructor, we’ll also flesh out the methods for `new_block()`, `new_transaction()` and `hash()`.
+
+---
+At this point, you must be wondering how new blocks are created, forged or mined. :eyes:
+---
+
+### Understanding Proof of Work (PoW)
