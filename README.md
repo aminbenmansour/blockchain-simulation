@@ -110,3 +110,16 @@ We’ll create three methods:
 + `/transactions/new` to create a new transaction to a block
 + `/mine` to tell our server to mine a new block.
 + `/chain` to return the full Blockchain.
+
+
+#### the transaction endpoint
+
+This is what the request for a transaction will look like. It’s what the user sends to the server:
+```
+{
+ "sender": "my address",
+ "recipient": "someone else's address",
+ "amount": 5
+}
+```
+
