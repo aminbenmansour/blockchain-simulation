@@ -123,3 +123,11 @@ This is what the request for a transaction will look like. It’s what the user 
 }
 ```
 
+### the mining endpoint
+
+Our mining endpoint is where the magic happens, and it’s easy. It has to do three things:
+1. Calculate the Proof of Work
+2. Reward the miner (us) by adding a transaction granting us 1 coin
+3. Forge the new Block by adding it to the chain
+
+Note that the recipient of the mined block is the address of our node. And most of what we’ve done here is just interact with the methods on our Blockchain class. At this point, we’re done, and can start interacting with our blockchain.
