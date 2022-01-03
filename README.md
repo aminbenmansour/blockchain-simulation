@@ -103,3 +103,10 @@ Our class is almost complete and we’re ready to begin interacting with it usin
 
 
 ### :fire: Our Blockchain as an API
+
+We’re going to use the Python Flask Framework. It’s a micro-framework and it makes it easy to map endpoints to Python functions. This allows us talk to our blockchain over the web using HTTP requests.
+
+We’ll create three methods:
++ `/transactions/new` to create a new transaction to a block
++ `/mine` to tell our server to mine a new block.
++ `/chain` to return the full Blockchain.
