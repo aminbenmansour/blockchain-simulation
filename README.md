@@ -4,6 +4,13 @@ New year new resolutions, never thought of a better beginning.
 
 The whole world is fascinated by Crytocurrency, NFTs, Decentraland and DeFi and waiting for the next IT revolution AKA web 3.0 to happen and migrating to the decentralized world
 
+### :rocket: usage
+ 
+1. make sure you have python 3.10 installed in addition to pipenv or run ```pip3 install pipenv```
+    +. start a virtual environment: ```pipenv shell```
+    +. install dependencies: ```pipenv install``` 
+    +. run ```python blockchain.py```
+
 ### goals 
 
 Blockchain as the backbone of all of these technologies is fundamental to understand.
