@@ -153,3 +153,17 @@ a new transaction were made to the last block.
 
 ![Screenshot_20220104_192042](https://user-images.githubusercontent.com/50111205/148107113-fa69b7de-cdf6-4037-ad6e-730680e61bd2.png)
 we visualized all blocks (ledgers) with their transactions in the the blockchain.
+
+
+### consensus
+
+This is very cool. We’ve got a basic Blockchain that accepts transactions and allows us to mine new Blocks. But the whole point of Blockchains is that they should be *decentralized*. And if they’re decentralized, **how on earth do we ensure that they all reflect the same chain?** This is called the problem of Consensus, and we’ll have to implement a Consensus Algorithm if we want more than one node in our network.
+
+#### :office: registering new nodes
+
+1. /nodes/register to accept a list of new nodes in the form of URLs.
+2. /nodes/resolve to implement our Consensus Algorithm, which resolves any conflicts—to ensure a node has the correct chain.
+
+We’ll need to modify our Blockchain’s constructor and provide a method for registering nodes:
+Note that we’ve used a ```set()``` to hold the list of nodes. This is a cheap way of ensuring that the addition of new nodes is idempotent, meaning that no matter how many times we add a specific node, it appears exactly once.
+
