@@ -138,3 +138,8 @@ Our mining endpoint is where the magic happens, and it’s easy. It has to do th
 3. Forge the new Block by adding it to the chain
 
 Note that the recipient of the mined block is the address of our node. And most of what we’ve done here is just interact with the methods on our Blockchain class. At this point, we’re done, and can start interacting with our blockchain.
+
+### :v: interacting with our blockchain
+
+The following pictures will show the result of our interactions with the three endpoints we created.
+
