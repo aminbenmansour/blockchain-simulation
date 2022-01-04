@@ -167,3 +167,13 @@ This is very cool. We’ve got a basic Blockchain that accepts transactions and 
 We’ll need to modify our Blockchain’s constructor and provide a method for registering nodes:
 Note that we’ve used a ```set()``` to hold the list of nodes. This is a cheap way of ensuring that the addition of new nodes is idempotent, meaning that no matter how many times we add a specific node, it appears exactly once.
 
+### implementing the consensus algorithm
+
+As mentioned, **a conflict is when one node has a different chain to another node**. To resolve this, we’ll make the rule that *the longest valid chain is authoritative*. In other words, the longest chain on the network is the de-facto one. Using this algorithm, we reach Consensus amongst the nodes in our network.
+
+The first method ```valid_chain()``` is responsible for checking if a chain is valid by looping through each block and verifying both the hash and the proof.
+
+```resolve_conflicts()``` is a method which loops through all our neighbouring nodes, downloads their chains and verifies them using the above method. If a valid chain is found, whose length is greater than ours, we replace ours.
+
+
+
