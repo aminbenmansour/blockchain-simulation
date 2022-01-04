@@ -143,3 +143,13 @@ Note that the recipient of the mined block is the address of our node. And most 
 
 The following pictures will show the result of our interactions with the three endpoints we created.
 
+![Screenshot_20220104_191532](https://user-images.githubusercontent.com/50111205/148106815-691b4e4c-3c64-4586-88a7-ebc23b426aa9.png)
+
+we executed the ```/mine``` endpoint once to produce a new block.
+
+![Screenshot_20220104_191807](https://user-images.githubusercontent.com/50111205/148107002-84c4163b-ac37-4817-9249-2be92f435762.png)
+
+a new transaction were made to the last block.
+
+![Screenshot_20220104_192042](https://user-images.githubusercontent.com/50111205/148107113-fa69b7de-cdf6-4037-ad6e-730680e61bd2.png)
+we visualized all blocks (ledgers) with their transactions in the the blockchain.
