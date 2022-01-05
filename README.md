@@ -161,8 +161,8 @@ This is very cool. We’ve got a basic Blockchain that accepts transactions and 
 
 #### :office: registering new nodes
 
-1. /nodes/register to accept a list of new nodes in the form of URLs.
-2. /nodes/resolve to implement our Consensus Algorithm, which resolves any conflicts—to ensure a node has the correct chain.
+1. ```/nodes/register``` to accept a list of new nodes in the form of URLs.
+2. ```/nodes/resolve``` to implement our Consensus Algorithm, which resolves any conflicts—to ensure a node has the correct chain.
 
 We’ll need to modify our Blockchain’s constructor and provide a method for registering nodes:
 Note that we’ve used a ```set()``` to hold the list of nodes. This is a cheap way of ensuring that the addition of new nodes is idempotent, meaning that no matter how many times we add a specific node, it appears exactly once.
