@@ -9,7 +9,7 @@ The whole world is fascinated by Crytocurrency, NFTs, Decentraland and DeFi and 
 1. make sure you have python 3.10 installed in addition to pipenv or run ```pip3 install pipenv```
     + start a virtual environment: ```pipenv shell```
     + install dependencies: ```pipenv install``` 
-    + run ```python blockchain.py```
+    + run ```python blockchain.py --port <port>```
 
 ### goals 
 
