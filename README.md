@@ -10,7 +10,15 @@ The whole world is fascinated by Crytocurrency, NFTs, Decentraland and DeFi and 
     + start a virtual environment: ```pipenv shell```
     + install dependencies: ```pipenv install``` 
     + run ```python blockchain.py```
-
+2. **Dockerized solution**
+    in order to run our blockchain in production each node should have to install the needed dependencies. Dockerizing the application is an optimal solution.
+    
+    + build the application only once
+        + ```docker image build -t blockchain:latest .```
+    + run an instance of the application
+        + ```docker container run --name <name> --publish <port>:5000 blockchain```
+    + stop a container
+        + ``` docker container stop <name>```
 ### goals 
 
 Blockchain as the backbone of all of these technologies is fundamental to understand.
