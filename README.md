@@ -187,5 +187,8 @@ The first method ```valid_chain()``` is responsible for checking if a chain is v
 
 ```resolve_conflicts()``` is a method which loops through all our neighbouring nodes, downloads their chains and verifies them using the above method. If a valid chain is found, whose length is greater than ours, we replace ours.
 
+## Contributing
 
+All contributions are welcome and highly appreciated.
+For the next step we tend to extend our blockchain to have a **Transaction Validation Mechanism** as well as discuss some ways in which we can productionize our blockchain.
 
